@@ -988,7 +988,7 @@ li{margin:0}
 
 </div>
 <div id="bar"></div><div id="hud">01 / 30</div>
-<div id="help">← → листать · S заметки · O содержание</div>
+<div id="help">← → листать · O содержание</div>
 <div id="notes"><h4>Заметки докладчика</h4><div id="notes-body"></div></div>
 <div id="toc"><div class="kick red" style="margin-bottom:22px">Содержание · нажмите на строку</div><ol id="toc-list"></ol></div>
 
@@ -1143,4 +1143,7 @@ li{margin:0}
   function go(){ if(document.fonts&&document.fonts.ready){document.fonts.ready.then(function(){setTimeout(run,60)});} else setTimeout(run,400); }
   if(document.readyState==='complete') go(); else addEventListener('load',go);
 })();
-</script>
+</script><a id="home-btn" href="../" title="На главную">← Все темы</a>
+<style>#notes{display:none!important}#home-btn{position:fixed;top:14px;left:14px;z-index:2147483000;font:500 13px/1 'Oswald',Impact,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#F2E7CE;background:rgba(14,11,10,.82);border:1px solid #E8402A;padding:9px 14px;text-decoration:none;backdrop-filter:blur(4px);transition:background .15s,opacity .2s;opacity:.85}
+#home-btn:hover{background:#E8402A;color:#fff;opacity:1}
+@media print{#home-btn{display:none}}</style>
